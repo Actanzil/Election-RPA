@@ -1,0 +1,521 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="869.6,701.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.3999999999999986</av:Point>
+        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.6 300,137.6</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID1</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,137.6</av:Point>
+          <av:Size x:Key="ShapeSize">200,24.8</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,162.4 300,207.6</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Name="data_input" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="671.2,784.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+          <ueab:ExcelProcessScopeX.Body>
+            <ActivityAction x:TypeArguments="ui:IExcelProcess">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="601.6,658.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="539.2,572" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="E:\FILKOM\SEMESTER 4\On The Job Training\Project Magang\electiondata.xlsx">
+                  <ueab:ExcelApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="505.6,279.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,192.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_6" Range="[Excel.Sheet(&quot;Sheet2&quot;)]" SaveTo="[data_input]" />
+                      </Sequence>
+                    </ActivityAction>
+                  </ueab:ExcelApplicationCard.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ueab:ExcelApplicationCard>
+              </Sequence>
+            </ActivityAction>
+          </ueab:ExcelProcessScopeX.Body>
+        </ueab:ExcelProcessScopeX>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Browser Chrome: Pemilihan Presiden PAMA Group (RPA Testing)" sap:VirtualizedContainerService.HintSize="671.2,4925.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="e8b8d80c-e5e2-4f17-957a-579992f410df" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="637.6,4685.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[data_input]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="575.2,4597.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541.6,4407.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/viewform" CvElementArea="595, 552, 379, 40" CvType="InputBox" DesignTimeRectangle="600, 541, 369, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Jawaban Anda'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='aCsJod oJeWuf' tag='DIV' aaname='' /&gt;" Guid="7d7096fd-08a5-4d10-8514-b2de2e580862" InformativeScreenshot="dfb14ff62249521d7d36e2ed35916e2c.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="599, 496, 50, 18" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="600, 491, 49, 30" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='Email' check:innerText='Email' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="479.2,147.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8f1acf39-ffbb-4840-82aa-6805ae656cdc" InformativeScreenshot="cd702f8a9be7af16c6dc73d58cff5994" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'NRP'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;NRP&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="583, 485, 381, 41" CvType="InputBox" DesignTimeRectangle="589, 475, 369, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Jawaban Anda'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='aCsJod oJeWuf' tag='DIV' aaname='' /&gt;" Guid="84b4882f-964e-426a-bd89-9fcb3492173d" InformativeScreenshot="8d8e4414dda1e52d886cb93ad0310c33.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 431, 41, 17" CvTextArgument="NRP" CvType="Text" DesignTimeRectangle="589, 425, 39, 30" ElementType="Text" FriendlyName="'NRP'" FullSelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='NRP' check:innerText='NRP' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nama'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Nama&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="584, 672, 380, 41" CvType="InputBox" DesignTimeRectangle="589, 412, 369, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Jawaban Anda'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='13' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='aCsJod oJeWuf' tag='DIV' aaname='' /&gt;" Guid="a42ab3bd-22d7-4883-85d8-f3c42763dfeb" InformativeScreenshot="353700f802b2e71beaf8a345cd009cb9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 618, 55, 17" CvTextArgument="Nama" CvType="Text" DesignTimeRectangle="589, 362, 54, 30" ElementType="Text" FriendlyName="'Nama'" FullSelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' type='' class='M7eMe' aaname='Nama' check:innerText='Nama' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Jenis Kelamin'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Jenis_Kelamin&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="582, 608, 382, 43" CvType="InputBox" DesignTimeRectangle="589, 599, 369, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Jawaban Anda'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='17' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='aCsJod oJeWuf' tag='DIV' aaname='' /&gt;" Guid="cb8e6f63-7873-422f-8ad3-3cc002c86856" InformativeScreenshot="94dd94980a8541c249229508d153d709.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="586, 555, 127, 18" CvTextArgument="Jenis Kelamin" CvType="Text" DesignTimeRectangle="589, 549, 125, 30" ElementType="Text" FriendlyName="'Jenis Kelamin'" FullSelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' type='' class='M7eMe' aaname='Jenis Kelamin' check:innerText='Jenis Kelamin' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Usia'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Usia&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="582, 798, 382, 39" CvType="InputBox" DesignTimeRectangle="589, 786, 369, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Jawaban Anda'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='21' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='aCsJod oJeWuf' tag='DIV' aaname='' /&gt;" Guid="0d51884f-404d-4f91-81f5-7aa292be1a15" InformativeScreenshot="b1c9bf03a337f237d7556d8d2726f6ea.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 741, 41, 18" CvTextArgument="Usia" CvType="Text" DesignTimeRectangle="589, 736, 39, 30" ElementType="Text" FriendlyName="'Usia'" FullSelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' type='' class='M7eMe' aaname='Usia' check:innerText='Usia' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Alamat'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Alamat&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="577, 752, 770, 41" CvType="InputBox" DesignTimeRectangle="589, 742, 738, 48" DesignTimeScaleFactor="1.25" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='11' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='Pc9Gce Wic03c' tag='DIV' aaname='' /&gt;" Guid="1f4f6ee3-9e32-4c4e-b234-fe37aa3cacfc" InformativeScreenshot="ed155da4ef8692c0137105b935ea3442.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="586, 698, 67, 18" CvTextArgument="Alamat" CvType="Text" DesignTimeRectangle="589, 692, 64, 30" ElementType="Text" FriendlyName="'Alamat'" FullSelectorArgument="&lt;webctrl parentid='i17' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i17' tag='SPAN' type='' class='M7eMe' aaname='Alamat' check:innerText='Alamat' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Berikutnya'" sap:VirtualizedContainerService.HintSize="479.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="700, 843, 157, 52" CvTextArea="731, 858, 92, 21" CvTextArgument="Berikutnya" CvType="Button" DesignTimeRectangle="704, 846, 151, 45" DesignTimeScaleFactor="1.25" FriendlyName="'Berikutnya'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Berikutnya' /&gt;" Guid="7c854b42-c336-4c2a-88bc-4d5f5abab125" InformativeScreenshot="3e46be12ee3186a421d020414d49bd70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvElementArea="700, 843, 157, 52" CvTextArea="731, 858, 92, 21" CvTextArgument="Berikutnya" CvType="Button" DesignTimeRectangle="734, 846, 91, 45" ElementType="Text" FriendlyName="'Berikutnya'" FullSelectorArgument="&lt;webctrl aaname='Berikutnya' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Berikutnya' tag='SPAN' type='' class='NPEfkd RveJvd snByac' check:innerText='Berikutnya' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Golongan'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Golongan&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="583, 362, 381, 39" CvType="InputBox" DesignTimeRectangle="589, 367, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="b1ce9fd3-c567-4754-8ac3-2d634e0794b4" InformativeScreenshot="cc552b783531b4aa97343bf7b151ecf3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 305, 86, 23" CvTextArgument="Golongan" CvType="Text" DesignTimeRectangle="589, 300, 85, 30" ElementType="Text" FriendlyName="'Golongan'" FullSelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='Golongan' check:innerText='Golongan' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Posisi'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Posisi&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="582, 547, 382, 41" CvType="InputBox" DesignTimeRectangle="589, 554, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-labelledby='i5' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i5' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="f8e67a3a-e6f0-4ac9-988d-98b00652c4e3" InformativeScreenshot="90559d5deea42a61c388c34777f0fde9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 492, 56, 18" CvTextArgument="Posisi" CvType="Text" DesignTimeRectangle="589, 487, 54, 30" ElementType="Text" FriendlyName="'Posisi'" FullSelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' type='' class='M7eMe' aaname='Posisi' check:innerText='Posisi' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Department'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Department&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="583, 734, 381, 41" CvType="InputBox" DesignTimeRectangle="589, 384, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-labelledby='i9' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i9' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="23992e4d-b01f-46bc-8820-ed658038bd8a" InformativeScreenshot="f845de1745afa2399f482248309df87b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 680, 107, 22" CvTextArgument="Department" CvType="Text" DesignTimeRectangle="589, 316, 105, 30" ElementType="Text" FriendlyName="'Department'" FullSelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' type='' class='M7eMe' aaname='Department' check:innerText='Department' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Divisi'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Divisi&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="582, 564, 382, 42" CvType="InputBox" DesignTimeRectangle="589, 571, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-labelledby='i13' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i13' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="176af2ab-6dbf-4658-b1cc-8241014a4afb" InformativeScreenshot="82a8294cc1e4c480bee50c4cc3576c7f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 508, 50, 20" CvTextArgument="Divisi" CvType="Text" DesignTimeRectangle="589, 504, 48, 30" ElementType="Text" FriendlyName="'Divisi'" FullSelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' type='' class='M7eMe' aaname='Divisi' check:innerText='Divisi' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Site'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Text="[CurrentRow(&quot;Site&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="583, 751, 380, 41" CvType="InputBox" DesignTimeRectangle="589, 758, 369, 30" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-labelledby='i17' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i17' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="43a71480-4db8-47fa-80ef-acd0f343cfa4" InformativeScreenshot="2528dd50f0ab4319473054a2c6057f20.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="588, 696, 36, 18" CvTextArgument="Site" CvType="Text" DesignTimeRectangle="589, 691, 34, 30" ElementType="Text" FriendlyName="'Site'" FullSelectorArgument="&lt;webctrl parentid='i17' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i17' tag='SPAN' type='' class='M7eMe' aaname='Site' check:innerText='Site' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Berikutnya'" sap:VirtualizedContainerService.HintSize="479.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="700, 844, 157, 52" CvTextArea="733, 860, 91, 21" CvTextArgument="Berikutnya" CvType="Button" DesignTimeRectangle="704, 847, 151, 45" DesignTimeScaleFactor="1.25" FriendlyName="'Berikutnya'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Berikutnya' /&gt;" Guid="752fd1b1-a8c0-4842-85c7-6df6583caeb8" InformativeScreenshot="046c890e7f02a0d519d23336ee13f061.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvElementArea="700, 844, 157, 52" CvTextArea="733, 860, 91, 21" CvTextArgument="Berikutnya" CvType="Button" DesignTimeRectangle="734, 847, 91, 45" ElementType="Text" FriendlyName="'Berikutnya'" FullSelectorArgument="&lt;webctrl aaname='Berikutnya' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Berikutnya' tag='SPAN' type='' class='NPEfkd RveJvd snByac' check:innerText='Berikutnya' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NForEachUiElement DisplayName="For Each UI Element" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='label' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="479.2,557.6" sap2010:WorkflowViewState.IdRef="NForEachUiElement_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Version="V3">
+                          <uix:NForEachUiElement.Body>
+                            <ActivityAction x:TypeArguments="x:Int32">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,250.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="353.6,162.4" sap2010:WorkflowViewState.IdRef="NClick_12" InUiElement="[CurrentElement]" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NForEachUiElement.Body>
+                          <uix:NForEachUiElement.Filter>
+                            <uuam:FilterArgument LogicalOperator="And">
+                              <uuam:FilterArgument.Filters>
+                                <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="1">
+                                  <uuam:FilterEntryArgument Criterion="Column0" Operator="Contains" Value="[CurrentRow(&quot;Pilihan&quot;).ToString]" />
+                                </scg:List>
+                              </uuam:FilterArgument.Filters>
+                            </uuam:FilterArgument>
+                          </uix:NForEachUiElement.Filter>
+                          <uix:NForEachUiElement.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="600, 535, 738, 150" DesignTimeScaleFactor="1.25" FriendlyName="'Arif RahmanHadi'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div' tag='DIV' /&gt;" Guid="64ac041c-9d53-4c00-9fc3-108085a71d0b" InformativeScreenshot="ef00b88787cfe12c4af319b7e58781ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                          </uix:NForEachUiElement.Target>
+                          <uix:NForEachUiElement.Variables>
+                            <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                            <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                          </uix:NForEachUiElement.Variables>
+                          <uix:NForEachUiElement.VariablesMetadata>
+                            <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                              <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                              <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                            </scg:List>
+                            <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column3" Capacity="4">
+                              <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
+                            </scg:List>
+                            <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                              <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
+                            </scg:List>
+                          </uix:NForEachUiElement.VariablesMetadata>
+                        </uix:NForEachUiElement>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kirim'" sap:VirtualizedContainerService.HintSize="479.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvElementArea="711, 704, 109, 49" CvTextArea="743, 718, 46, 17" CvTextArgument="Kirim" CvType="Button" DesignTimeRectangle="714, 706, 104, 45" DesignTimeScaleFactor="1.25" FriendlyName="'Kirim'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='l4V7wb Fxmcue' tag='SPAN' aaname='' check:innerText='Kirim' /&gt;" Guid="29f30107-6ffd-4e97-9c4b-ef7788764d5c" InformativeScreenshot="b4c0f4f87ac1f4f9f0dc849155f286da.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvElementArea="711, 704, 109, 49" CvTextArea="743, 718, 46, 17" CvTextArgument="Kirim" CvType="Button" DesignTimeRectangle="744, 706, 44, 45" ElementType="Text" FriendlyName="'Kirim'" FullSelectorArgument="&lt;webctrl aaname='Kirim' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Kirim' tag='SPAN' type='' class='NPEfkd RveJvd snByac' check:innerText='Kirim' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Kirim jawaban lain'" sap:VirtualizedContainerService.HintSize="479.2,180.8" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e8b8d80c-e5e2-4f17-957a-579992f410df" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/formResponse" CvTextArea="598, 433, 145, 19" CvTextArgument="Kirim jawaban. lain" CvType="Text" DesignTimeRectangle="600, 434, 142, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Kirim jawaban lain'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='' aaname='Kirim jawaban lain' check:innerText='Kirim jawaban lain' /&gt;" Guid="4f1fdcd9-8e15-4a31-8696-e5c86afbef3e" InformativeScreenshot="8139dcc88570486271bcceae937be98a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="5af6271e1ef782b23fe0c4629df71a93.jpg" Selector="&lt;html app='chrome.exe' title='Pemilihan Presiden PAMA Group (RPA Testing)' /&gt;" Title="Pemilihan Presiden (RPA Testing)" Url="https://docs.google.com/forms/d/e/1FAIpQLSfYVpDKw76CNE9op7It4E_w-wfAElCPO7cHAfrgDm70-uWQUQ/viewform" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </Sequence>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,207.6</av:Point>
+              <av:Size x:Key="ShapeSize">200,24.8</av:Size>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:CommentOut sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <Sequence sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="data_output" />
+                    <Variable x:TypeArguments="ui:DatabaseConnection" Name="db_connection" />
+                    <Variable x:TypeArguments="x:Int32" Name="int_RowAffected" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="tanziluadjiganesha@gmail.com" Action="UseExisting" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="433.6,538.4" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="https://docs.google.com/spreadsheets/d/1aFGP3HuRU1WOkm5drd2T8mAJleHqmd9LEe8F4qOAh5Q/edit?usp=drivesdk" SpreadsheetName="Pemilihan Presiden (RPA Testing) (Jawaban)" UseConnectionService="False" UserEmail="tanziluadjiganesha@gmail.com">
+                    <ugas:GoogleSheetsApplicationScope.Body>
+                      <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                        </ActivityAction.Argument>
+                        <uga:ReadRange ContinueOnError="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="333.6,216" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[data_output]" SheetName="Sheet1">
+                          <uga:ReadRange.Range>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </uga:ReadRange.Range>
+                        </uga:ReadRange>
+                      </ActivityAction>
+                    </ugas:GoogleSheetsApplicationScope.Body>
+                    <ugas:GoogleSheetsApplicationScope.CredentialID>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ugas:GoogleSheetsApplicationScope.CredentialID>
+                    <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String" Value="" />
+                      </InArgument>
+                    </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                  </ugas:GoogleSheetsApplicationScope>
+                  <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="433.6,100" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=ASUSACTA;Initial Catalog=testDb;Integrated Security=True;Encrypt=False" DatabaseConnection="[db_connection]" />
+                  <ui:InsertDataTable ContinueOnError="{x:Null}" AffectedRecords="[int_RowAffected]" DataTable="[data_output]" DisplayName="Insert" ExistingDbConnection="[db_connection]" sap:VirtualizedContainerService.HintSize="433.6,156" sap2010:WorkflowViewState.IdRef="InsertDataTable_1" TableName="election_table" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[int_RowAffected.ToString]" />
+                </Sequence>
+              </Sequence>
+            </ui:CommentOut.Body>
+          </ui:CommentOut>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+  </Flowchart>
+</Activity>
